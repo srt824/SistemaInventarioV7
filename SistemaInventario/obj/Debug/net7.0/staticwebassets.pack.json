@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\Bodega.js",
-      "PackagePath": "staticwebassets\\js\\Bodega.js"
+      "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\3a820045-18cd-488e-adfc-22aae61dbbb3.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\3a820045-18cd-488e-adfc-22aae61dbbb3.JPG"
+    },
+    {
+      "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\dfb61d9a-451c-4d5d-9346-cac91404ebb0.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\dfb61d9a-451c-4d5d-9346-cac91404ebb0.JPG"
+    },
+    {
+      "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\eb6d8a4c-d71f-417f-bf4d-ec3c79dca886.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\eb6d8a4c-d71f-417f-bf4d-ec3c79dca886.JPG"
+    },
+    {
+      "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\bodega.js",
+      "PackagePath": "staticwebassets\\js\\bodega.js"
     },
     {
       "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\categoria.js",
@@ -23,6 +35,10 @@
     {
       "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\marca.js",
       "PackagePath": "staticwebassets\\js\\marca.js"
+    },
+    {
+      "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\producto.js",
+      "PackagePath": "staticwebassets\\js\\producto.js"
     },
     {
       "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\site.js",

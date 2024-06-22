@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\icono.ico",
+      "PackagePath": "staticwebassets\\imagenes\\icono.ico"
+    },
+    {
+      "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\icono.png",
+      "PackagePath": "staticwebassets\\imagenes\\icono.png"
+    },
+    {
       "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\3a820045-18cd-488e-adfc-22aae61dbbb3.JPG",
       "PackagePath": "staticwebassets\\imagenes\\producto\\3a820045-18cd-488e-adfc-22aae61dbbb3.JPG"
+    },
+    {
+      "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\8cbf30cd-ac88-48d5-88f2-a0ce86a351d7.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\8cbf30cd-ac88-48d5-88f2-a0ce86a351d7.JPG"
     },
     {
       "Id": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\dfb61d9a-451c-4d5d-9346-cac91404ebb0.JPG",

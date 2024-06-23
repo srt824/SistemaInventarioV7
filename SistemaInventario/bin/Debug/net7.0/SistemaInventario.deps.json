@@ -3454,6 +3454,9 @@
         }
       },
       "SistemaInventario.Utilidades/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "7.0.20"
+        },
         "runtime": {
           "SistemaInventario.Utilidades.dll": {}
         },

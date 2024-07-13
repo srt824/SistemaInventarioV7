@@ -563,3 +563,6 @@ C:\Users\storr\Desktop\EducacionIT\Programacion Web Net Core\SistemaInventario\S
 C:\Users\storr\Desktop\EducacionIT\Programacion Web Net Core\SistemaInventario\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\storr\Desktop\EducacionIT\Programacion Web Net Core\SistemaInventario\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 C:\Users\storr\Desktop\EducacionIT\Programacion Web Net Core\SistemaInventario\SistemaInventario\SistemaInventario\bin\Debug\net7.0\libman.json
+C:\Users\storr\Desktop\EducacionIT\Programacion Web Net Core\SistemaInventario\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Rotativa\Windows\wkhtmltoimage.exe
+C:\Users\storr\Desktop\EducacionIT\Programacion Web Net Core\SistemaInventario\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Rotativa\Windows\wkhtmltopdf.exe
+C:\Users\storr\Desktop\EducacionIT\Programacion Web Net Core\SistemaInventario\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Rotativa.AspNetCore.dll

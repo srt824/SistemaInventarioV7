@@ -12,6 +12,7 @@ namespace SistemaInventario.Areas.Admin.Controllers
     [Authorize(Roles = DS.Role_Admin + "," + DS.Role_Inventario)]
     public class ProductoController : Controller
     {
+
         private readonly IUnidadTrabajo _unidadTrabajo;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
@@ -19,8 +20,8 @@ namespace SistemaInventario.Areas.Admin.Controllers
         {
             _unidadTrabajo = unidadTrabajo;
             _webHostEnvironment = webHostEnvironment;
-
         }
+
         public IActionResult Index()
         {
             return View();
@@ -28,15 +29,17 @@ namespace SistemaInventario.Areas.Admin.Controllers
 
         public async Task<IActionResult> Upsert(int? id)
         {
+
             ProductoVM productoVM = new ProductoVM()
             {
                 Producto = new Producto(),
                 CategoriaLista = _unidadTrabajo.Producto.ObtenerTodosDropdownLista("Categoria"),
                 MarcaLista = _unidadTrabajo.Producto.ObtenerTodosDropdownLista("Marca"),
                 PadreLista = _unidadTrabajo.Producto.ObtenerTodosDropdownLista("Producto")
+
             };
 
-            if(id == null)
+            if (id == null)
             {
                 // Crear nuevo Producto
                 productoVM.Producto.Estado = true;
@@ -45,7 +48,7 @@ namespace SistemaInventario.Areas.Admin.Controllers
             else
             {
                 productoVM.Producto = await _unidadTrabajo.Producto.Obtener(id.GetValueOrDefault());
-                if(productoVM.Producto == null)
+                if (productoVM.Producto == null)
                 {
                     return NotFound();
                 }
@@ -62,14 +65,14 @@ namespace SistemaInventario.Areas.Admin.Controllers
                 var files = HttpContext.Request.Form.Files;
                 string webRootPath = _webHostEnvironment.WebRootPath;
 
-                if(productoVM.Producto.Id == 0)
+                if (productoVM.Producto.Id == 0)
                 {
                     // Crear
                     string upload = webRootPath + DS.ImagenRuta;
-                    string fileName = Guid.NewGuid().ToString(); // unico id
+                    string fileName = Guid.NewGuid().ToString();
                     string extension = Path.GetExtension(files[0].FileName);
 
-                    using(var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
+                    using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
                     {
                         files[0].CopyTo(fileStream);
                     }
@@ -79,24 +82,24 @@ namespace SistemaInventario.Areas.Admin.Controllers
                 else
                 {
                     // Actualizar
-                    var objProducto = await _unidadTrabajo.Producto.ObtenerPrimero(p => p.Id == productoVM.Producto.Id, isTracking:false);
-                    if(files.Count > 0) // Si se carga una nueva imagen para el producto existente
+                    var objProducto = await _unidadTrabajo.Producto.ObtenerPrimero(p => p.Id == productoVM.Producto.Id, isTracking: false);
+                    if (files.Count > 0)  // Si se carga una nueva Imagen para el producto existente
                     {
                         string upload = webRootPath + DS.ImagenRuta;
-                        string fileName = Guid.NewGuid().ToString();
+                        string fileNAme = Guid.NewGuid().ToString();
                         string extension = Path.GetExtension(files[0].FileName);
 
-                        // Borrar la imagen anterior
+                        //Borrar la imagen anterior
                         var anteriorFile = Path.Combine(upload, objProducto.ImagenUrl);
                         if (System.IO.File.Exists(anteriorFile))
                         {
                             System.IO.File.Delete(anteriorFile);
                         }
-                        using(var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
+                        using (var fileStream = new FileStream(Path.Combine(upload, fileNAme + extension), FileMode.Create))
                         {
                             files[0].CopyTo(fileStream);
                         }
-                        productoVM.Producto.ImagenUrl = fileName + extension;
+                        productoVM.Producto.ImagenUrl = fileNAme + extension;
                     } // Caso contrario no se carga una nueva imagen
                     else
                     {
@@ -104,11 +107,12 @@ namespace SistemaInventario.Areas.Admin.Controllers
                     }
                     _unidadTrabajo.Producto.Actualizar(productoVM.Producto);
                 }
-                TempData[DS.Exitosa] = "Transaccion Exitosa";
+                TempData[DS.Exitosa] = "Transaccion Exitosa!";
                 await _unidadTrabajo.Guardar();
-                return View("Index");
+                //return View("Index");
+                return RedirectToAction("Index");
 
-            } // IF not Valid
+            }  // If not Valid
             productoVM.CategoriaLista = _unidadTrabajo.Producto.ObtenerTodosDropdownLista("Categoria");
             productoVM.MarcaLista = _unidadTrabajo.Producto.ObtenerTodosDropdownLista("Marca");
             productoVM.PadreLista = _unidadTrabajo.Producto.ObtenerTodosDropdownLista("Producto");
@@ -116,12 +120,15 @@ namespace SistemaInventario.Areas.Admin.Controllers
         }
 
 
+
+
+
         #region API
 
         [HttpGet]
-        public async Task<IActionResult> ObtenerTodos() // IActionResult no solo retorna una vista sino también objetos JSON
+        public async Task<IActionResult> ObtenerTodos()
         {
-            var todos = await _unidadTrabajo.Producto.ObtenerTodos(incluirPropiedades:"Categoria, Marca");
+            var todos = await _unidadTrabajo.Producto.ObtenerTodos(incluirPropiedades: "Categoria,Marca");
             return Json(new { data = todos });
         }
 
@@ -144,7 +151,7 @@ namespace SistemaInventario.Areas.Admin.Controllers
 
             _unidadTrabajo.Producto.Remover(productoDb);
             await _unidadTrabajo.Guardar();
-            return Json(new { success = true, message = "Producto borrado exitosamente " });
+            return Json(new { success = true, message = "Producto borrado exitosamente" });
         }
 
         [ActionName("ValidarSerie")]
@@ -165,8 +172,10 @@ namespace SistemaInventario.Areas.Admin.Controllers
                 return Json(new { data = true });
             }
             return Json(new { data = false });
+
         }
 
         #endregion
+
     }
 }

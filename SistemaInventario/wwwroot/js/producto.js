@@ -1,4 +1,4 @@
-﻿let database;
+﻿let datatable;
 
 $(document).ready(function () {
     loadDataTable();
@@ -9,13 +9,13 @@ function loadDataTable() {
         "language": {
             "lengthMenu": "Mostrar _MENU_ Registros Por Pagina",
             "zeroRecords": "Ningun Registro",
-            "info": "Mostrar pagina _PAGE_ de _PAGES_",
+            "info": "Mostrar page _PAGE_ de _PAGES_",
             "infoEmpty": "no hay registros",
-            "infoFiltered": "(filtered from _MAX_ total registros",
-            "search": "buscar",
+            "infoFiltered": "(filtered from _MAX_ total registros)",
+            "search": "Buscar",
             "paginate": {
                 "first": "Primero",
-                "last": "Ultimo",
+                "last": "Último",
                 "next": "Siguiente",
                 "previous": "Anterior"
             }
@@ -31,7 +31,7 @@ function loadDataTable() {
             {
                 "data": "precio", "className": "text-end",
                 "render": function (data) {
-                    var d = data.ToFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+                    var d = data.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
                     return d;
                 }
             },
@@ -52,16 +52,17 @@ function loadDataTable() {
                     return `
                         <div class="text-center">
                            <a href="/Admin/Producto/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
-                              <i class="bi bi-pencil-square"></i>
+                              <i class="bi bi-pencil-square"></i>  
                            </a>
                            <a onclick=Delete("/Admin/Producto/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
-                              <i class="bi bi-trash3-fill"></i>
-                           </a>
+                                <i class="bi bi-trash3-fill"></i>
+                           </a> 
                         </div>
                     `;
                 }, "width": "20%"
             }
         ]
+
     });
 }
 

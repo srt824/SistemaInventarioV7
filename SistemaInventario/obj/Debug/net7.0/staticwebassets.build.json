@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EtJ5rSOVVgvs7Ntz5X82bsj8oSZHae3SiPURCag8HNk=",
+  "Hash": "ASGRTMMmTY9VNw5S4vDn7Rw8iBLuhKzsw4O6bMsGS4w=",
   "Source": "SistemaInventario",
   "BasePath": "_content/SistemaInventario",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\confirmacion.jpg",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "imagenes/confirmacion.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\confirmacion.jpg"
     },
     {
       "Identity": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\icono.ico",

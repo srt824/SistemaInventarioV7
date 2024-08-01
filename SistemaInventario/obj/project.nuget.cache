@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cucD+eKlhASMiT3hFIyeMv2yYZrnPRAcEqeqL5gsALk5o5I+slerVlYAFvAb/1ENxgpkCmuKe5h1qRZsyXIheg==",
+  "dgSpecHash": "BSrupu7Zd4ON5EX+VvYsbgAxog0fYDvHn95RtMlwzape5Yp5urlJ/8XpS93YL4PiwAOQpA08DPI5ireHT3bBHA==",
   "success": true,
   "projectFilePath": "C:\\Users\\storr\\Desktop\\EducacionIT\\Programacion Web Net Core\\SistemaInventario\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
   "expectedPackageFiles": [
@@ -187,6 +187,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\storr\\.nuget\\packages\\stripe.net\\45.5.0\\stripe.net.45.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\storr\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

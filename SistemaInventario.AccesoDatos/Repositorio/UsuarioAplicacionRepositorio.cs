@@ -11,12 +11,14 @@ namespace SistemaInventario.AccesoDatos.Repositorio
 {
     public class UsuarioAplicacionRepositorio : Repositorio<UsuarioAplicacion>, IUsuarioAplicacionRepositorio
     {
+
         private readonly ApplicationDbContext _db;
 
         public UsuarioAplicacionRepositorio(ApplicationDbContext db) : base(db)
         {
-            _db= db;
+            _db = db;
         }
-       
+
+
     }
 }

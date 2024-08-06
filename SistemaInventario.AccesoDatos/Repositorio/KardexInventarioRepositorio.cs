@@ -6,6 +6,7 @@ using SistemaInventario.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,11 +14,12 @@ namespace SistemaInventario.AccesoDatos.Repositorio
 {
     public class KardexInventarioRepositorio : Repositorio<KardexInventario>, IKardexInventarioRepositorio
     {
+
         private readonly ApplicationDbContext _db;
 
         public KardexInventarioRepositorio(ApplicationDbContext db) : base(db)
         {
-            _db= db;
+            _db = db;
         }
 
         public async Task RegistrarKardex(int bodegaProductoId, string tipo, string detalle, int stockAnterior, int cantidad, string usuarioId)
